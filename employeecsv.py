@@ -14,7 +14,7 @@ def read_employees(csv_file_location):
 
 
 employee_list = read_employees(
-    '/home/student-04-5c24a7fcc64e/data/employees.csv')
+    '/home/student-04-a5fbc051a742/data/employees.csv')
 print(employee_list)
 
 
@@ -42,4 +42,4 @@ def write_report(dictionary, report_file):
 
 
 write_report(
-    dictionary, '/home/student-04-5c24a7fcc64e/data/test-report.txt')
+    dictionary, '/home/student-04-a5fbc051a742/data/test-report.txt')
