@@ -12,7 +12,7 @@ class Manager(cotyledon.ServiceManager):
 
     def _reload(self):
         print("Reloading")
-        self.reconfigure(self.printer, 5)
+        self.reconfigure(self.printer, 5) #helps restructure number of processes
 
 class ProducerService(cotyledon.Service):
     def __init__(self, worker_id, queue):
