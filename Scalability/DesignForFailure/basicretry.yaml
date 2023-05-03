@@ -1,0 +1,7 @@
+while True:
+  try:
+    doSomething()
+  except:
+    pass
+  else:
+    break
