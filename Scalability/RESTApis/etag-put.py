@@ -15,11 +15,11 @@ def check_etag(exception_class):
     global ETAG
 
     if_match = flask.request.headers.get("If-Match")
-    if if_match is not None and if_match != str(ETAG)
+    if if_match is not None and if_match != str(ETAG):
         raise exception_class
     
     if_none_match = flask.request.headers.get("If-None-Match")
-    if if_none_match is not None and if_none_match == str(ETAG)
+    if if_none_match is not None and if_none_match == str(ETAG):
         raise exception_class
     
 @app.route("/", methods=["GET"])
